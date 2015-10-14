@@ -51,11 +51,12 @@ Function `path()` is created as to handle the possibility of the data directory 
    * a loop performs the tidying. <sub>See Week 4 of Getting and Cleaning data : Regular expressions</sub>
    * Dashes `-` and underscores `_` are handled recursively using `gsub()`
    * `names( data )` is assigned the value of this new `sanitized_names` vector
-   List of transformations is contained with [The Code Book](./CodeBook.md)
+   
+  List of transformations is contained within [The Code Book](./CodeBook.md)
 
 3. Uses descriptive activity names   
    * `activity_labes` dataset is loaded and transformed to lowercase with all underscores `_` dropped.
-   * vector `activity_labes` is factorized using `as.factor()` and assigned to column 1 of `y` data.frame (the merged activities data-set)
+   * vector `activity_labes` is factorized using `as.factor()` and assigned to column 1 of `y` data.frame (the merged activities data-set) <sub>See Week 4 of Getting and Cleaning data: Editing text variables.</sub>
 
 4. Appropriately label the data set with descriptive variable names
    * `names( subject )` is assigned the value `subject`
