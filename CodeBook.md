@@ -43,12 +43,12 @@ Specifically, this means:
 
 1. column names have been made lower-cased
 2. commas and underscores have been dropped (this includes the text values in column `activity`)
-3. function names as [described here](./features_info.txt) have been replaced with their *descriptive* names (std() to 'standarddeviation')
-4. domain measurement prefixes 'f' and 't' have been replace with 'frequency' and 'time' respectively
+3. function names as [described here](./features_info.txt) have been replaced with their *descriptive* names (std() to 'StandardDeviation')
+4. domain measurement prefixes 'f' and 't' have been replaced with 'frequency' and 'time' respectively
 5. shorthands as Acc have been replaced with more descriptive names ie. 'acceleration'
 
 
-For the purpos of this project *only mean averages and standard deviations* values have been extracted from the merged and tidyed dataset obtained by a process as describer in the [README.md](./README.md)
+For the purposed of this project *only mean and standard deviation* values have been extracted from the merged and tidyed dataset obtained by a process describer in the [README.md](./README.md)
 
 ## Variables
 Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv
@@ -57,7 +57,7 @@ Provided is the list of sanitized variable names as they appear in independent_t
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
 | subject | 1 | numeric | The id of the test subject. The independant tidy dataset contains subjects `1` to `30` |
 | activity| 2 | factor  | The actual activity being performed during the experiament. Possible values are: `sitting`, `walking`, `walkingupstairs`, `walkingdownstairs`, `laying`, `standing` |
-|timebodyaccelerationmeanx | 3 |numeric| See original features_info.txt excerpt below.|
+|timebodyaccelerationmeanx | 3 |numeric| See original [features_info.txt](./features_info.txt) for details.|
 |timebodyaccelerationmeany | 4 |numeric||
 |timebodyaccelerationmeanz | 5 |numeric||
 |timebodyaccelerationstandarddeviationx | 6 |numeric||
