@@ -7,9 +7,9 @@ This file provides information primarily on the `run_analysis.R` script, which i
 
 The project consists of the following items:
 
-1. [run_analysis.R](./run_analysis.R) Which is used to perform all merging, tidying, transforming and extrating.
+1. [run_analysis.R](./run_analysis.R) Which is used to perform all merging, tidying, transformation and extraction.
 2. [README.md](./README.md) (this file)
-3. [The Code Book](./CodeBook.md) describing data collection, methods and variables as they pertain to the independent_tidy_data.csv
+3. [The Code Book](./CodeBook.md) describing data collection, variables and methods used
 4. [independent_tidy_data.csv]( ./independent_tidy_data.csv ) (the final report file)
 5. [features_info.txt](./features_info.txt) and [features.txt](./features_info.txt) as they appear in the source package.
 6. [The raw data](./getdata_projectfiles_UCI HAR Dataset.zip)
@@ -18,12 +18,12 @@ The project consists of the following items:
 
 ## Processing
 
-Function `path` is created as to permit the data directory to be moved around. `path( <filename> )` will always return a valid *windows* path to the `filename` passed.
+Function `path()` is created as to handle the possibility of the data directory being moved or renamed. `path( <filename> )` will always return a valid *windows* path to the `filename` passed.
 
 1. Merge training and test set
-   * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, thus allowing an ample sample volume for R to determine column class.
-   * `x_train` id loaded using the above determined column classes in it's full length. This approach significantly reduces the load-time.
-   * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()``
+   * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column class.
+   * `x_train` id loaded specifying the column classes determined above, in it's full length. This approach significantly reduces the load-time.
+   * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()`
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
    * the same process is performed on `subject_train` and `subject_test` data-sets producing data.frame `subjects`
 
