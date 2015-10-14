@@ -13,7 +13,6 @@ This file provides information about the `run_analysis.R` script, which is a par
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 
-
 ## Project
 
 The project consists of the following items:
@@ -28,7 +27,11 @@ The project consists of the following items:
 
 ## Coding
 
-1. Adhering to the Coding Standard lecture from Week 2 of the R Programing course, single-lined instructions are wraped as to not exceed the 80 characters screen margin.
+Adhering to the Coding Standard lecture from Week 2 of the R Programing course, single-lined instructions are wraped as to not exceed the 80 characters screen margin.
+
+The script is (for my taste) heavily commented.
+
+Development was performed using RStudio 0.99.486, R version 3.2.2. "Fire Safety" on Windows 8.1
 
 
 ## Processing
