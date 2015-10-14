@@ -26,14 +26,19 @@ The project consists of the following items:
 6. [The raw data](./getdata_projectfiles_UCI HAR Dataset.zip)
 
 
+## Coding
+
+1. Adhering to the Coding Standard lecture from Week 2 of the R Programing course, single-lined instructions are wraped as to not exceed the 80 characters screen margin.
+
 
 ## Processing
 
-Function `path()` is created as to handle the possibility of the data directory being moved or renamed. `path( <filename> )` will always return a valid *windows* path to the `filename` passed.
+Function `path()` is created as to handle the possibility of the data directory being moved or renamed.
+`path(<filename>)` returns a valid *windows* path to the `filename` passed.
 
 1. Merge training and test set
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column class.
-   * `x_train` id loaded specifying the column classes determined above, in it's full length. This approach significantly reduces the load-time.
+   * `x_train` id loaded specifying the column classes determined above, in it's full length. This approach significantly reduces the load-time. See R Programming course, Week 1: Loading Large Tables
    * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()`
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
    * the same process is performed on `subject_train` and `subject_test` data-sets producing data.frame `subjects`
@@ -43,7 +48,7 @@ Function `path()` is created as to handle the possibility of the data directory 
    and applied to a subseting function to `x` to obtain the desired data.frame `data`
    * a characted vector `sanitized_names` of names to tidy-up is obtained from `features` using `grep()`
    * list `transform_map` lists in a *search-and-replace* notation what is to be transformed
-   * a loop performs all the tidying
+   * a loop performs all the tidying. See Week 4 of Getting and Cleaning data : Regular expressions
    * Dashes `-` and underscores `_` are handled recursivly using `gsub()`
    * `names( data )` is assigned the value of this new `sanitized_names` vector
 
@@ -58,7 +63,7 @@ Function `path()` is created as to handle the possibility of the data directory 
 5. Creates independent tidy data set with averages of each variable for each activity and each subject
    * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column was added by `paste0()`-ing the `subcject` and `activity` values.
    A value from this concatinated field might look something like `1.walking`
-   * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed.
+   * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed. See R Programming Course, Week 3: loop functions - lapply()
    * the resulting data.frame must be passed through `t()` in order to switch rows/columns, thus producing data.frame `report`
    * as `report` nnow lacks non-numeric fields these have to be reintroduced by parsing it's `rownames()`
    * `activity` is factorized as per guide-lines introduced in Week 4 of the course
