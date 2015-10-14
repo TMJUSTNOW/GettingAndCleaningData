@@ -1,6 +1,6 @@
-# Getting and cleaning data: peer assesment
+# Getting and cleaning data: peer-assesment
 
-This file provides information about the `run_analysis.R` script, which is a part of the Project Course submission on Getting and Cleaning Data from the DataScience Specialization on Coursera.
+This file provides information about the `run_analysis.R` script, which is a part of the Course Project submission on Getting and Cleaning Data from the DataScience Specialization on Coursera.
 
 
 ## The assignment
