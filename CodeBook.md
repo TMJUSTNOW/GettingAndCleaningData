@@ -26,7 +26,8 @@ was performed using `split()` based on `subject` and `activity` and the resultin
 
 ## Transformations
 
-Original variables from the raw data-set [found in features.txt](./features.txt) went through a tidying process as per Week 4 lecture of Getting and Cleaning data, summarized here:
+Original variables from the raw data-set found in [features.txt](./features.txt) went through a tidying process as per Week 4 lecture of Getting and Cleaning data, summarized here:
+
 1. Names of variables should be:
    * All lower case when possible
    * Descriptive
