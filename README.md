@@ -27,11 +27,11 @@ The project consists of the following items:
 
 ## Coding
 
+Development was performed using RStudio 0.99.486, R version 3.2.2. "Fire Safety" on Windows 8.1
+
 Adhering to the Coding Standard lecture from Week 2 of the R Programing course, single-lined instructions are wraped as to not exceed the 80 characters screen margin.
 
-The script is (for my taste) heavily commented.
-
-Development was performed using RStudio 0.99.486, R version 3.2.2. "Fire Safety" on Windows 8.1
+Payload containing the raw data was obtained from: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip on 2015-10-11 11:05 AM
 
 
 ## Processing
