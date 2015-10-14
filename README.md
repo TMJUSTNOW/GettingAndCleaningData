@@ -10,7 +10,7 @@ The project consists of the following items:
 1. [run_analysis.R](./run_analysis.R) Which is used to perform all merging, tidying, transforming and extrating.
 2. [README.md](./README.md) (this file)
 3. [The Code Book](./CodeBook.md) describing data collection, methods and variables as they pertain to the independant_tydi_data.csv
-4. [independant_tydi_data.csv]( ./independant_tidy_data ) (the final report file)
+4. [independant_tidy_data.csv]( ./independant_tidy_data.csv ) (the final report file)
 5. [features_info.txt](./features_info.txt) and [features.txt](./features_info.txt) as they appear in the source package.
 6. [The raw data](./getdata_projectfiles_UCI HAR Dataset.zip)
 
