@@ -72,6 +72,6 @@ Function `path()` is created as to handle the possibility of the data directory 
    * `subject` is passed through `as.numeric()` as to permit proper ordering
    * the `report` object is ordered by `subject` and `activity` than written to disk using `write.csv()` with `row.names` set to `FALSE`
     
-   The resulting file is available [here](./independent_tidy_data.csv)
+   The resulting file is available [here](./independent_tidy_data.csv).
 
 
