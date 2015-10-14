@@ -63,13 +63,15 @@ Function `path()` is created as to handle the possibility of the data directory 
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` data.frames using cbind()
 
 5. Creates independent tidy data set with averages of each variable for each activity and each subject
-   * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column was added by `paste0()`-ing the `subcject` and `activity` values.
+   * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column had added by `paste0()`-ing the `subcject` and `activity` values.
    A value from this concatinated field might look something like `1.walking`
    * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed. <sub>See R Programming Course, Week 3: loop functions - lapply()</sub>
    * the resulting data.frame must be passed through `t()` in order to switch rows/columns, thus producing data.frame `report`
-   * as `report` nnow lacks non-numeric fields these have to be reintroduced by parsing it's `rownames()`
+   * as `report` now lacks non-numeric fields these are to be reintroduced by means of parsing `rownames()`
    * `activity` is factorized as per guide-lines introduced in Week 4 of the course
-   * `subject` is passed through `as.numeric()` as to permit proper ordering (Excel)
-   * the `report` is written to disk using `write.csv()` with `row.names` set to `FALSE`
+   * `subject` is passed through `as.numeric()` as to permit proper ordering
+   * the `report` object is ordered by `subject` and `activity` than written to disk using `write.csv()` with `row.names` set to `FALSE`
+    
+   The resulting file is available [here](./independent_tidy_data.csv)
 
 
