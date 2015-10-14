@@ -1,6 +1,17 @@
 # Getting and cleaning data: peer assesment
 
-This file provides information primarily on the `run_analysis.R` script, which is a part of the Project Course submission on Getting and Cleaning Data from the DataScience Specialization on Coursera.
+This file provides information about the `run_analysis.R` script, which is a part of the Project Course submission on Getting and Cleaning Data from the DataScience Specialization on Coursera.
+
+
+## The assignment
+
+>You should create one R script called run_analysis.R that does the following. 
+  1.  Merges the training and the test sets to create one data set.
+  2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+  3. Uses descriptive activity names to name the activities in the data set
+  4. Appropriately labels the data set with descriptive variable names. 
+  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
 
 
 ## Project
@@ -55,10 +66,3 @@ Function `path()` is created as to handle the possibility of the data directory 
    * the `report` is written to disk using `write.csv()` with `row.names` set to `FALSE`
 
 
-## In closing
-
-It is this future data scientist's view (with 20 years of programming experience) that the tidy data rules are in some cases taken into extreme.
-Uncompromizingly adhering to the rules, in a large data-set with long variable names, produces column names utterly unreadable to a human. And while they might be harded to debug
-as suggested by our kind TAs... well, that's why we have debuggers :)
-
-The answer to the question of sanitizing variable names like `fBodyGyro-bandsEnergy()-25,48` without using at least underscore `_` eludes me.
