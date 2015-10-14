@@ -6,6 +6,7 @@ This file provides information primarily on the `run_analysis.R` script, which i
 ## Project
 
 The project consists of the following items:
+
 1. [run_analysis.R](./run_analysis.R) Which is used to perform all merging, tidying, transforming and extrating.
 2. [README.md](./README.md) (this file)
 3. [The Code Book](./CodeBook.md) describing data collection, methods and variables as they pertain to the independant_tydi_data.csv
