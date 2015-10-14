@@ -3,25 +3,30 @@
 This Code Book is part of the Course project solution on *Getting and Cleaning data* for the DataScience Specialization offered by Johns Hophins Bloomberg school of public medicine via Coursera.
 It provides information on the data collection process, variables and transformations performed.
 
-This codebook is, in part, based on an example provided here: http://www.icpsr.umich.edu/icpsrweb/ICPSR/help/cb9721.jsp
+This codebook is, in part, based on an example provided here:  
+http://www.icpsr.umich.edu/icpsrweb/ICPSR/help/cb9721.jsp
 
 ## Data collection
 
-The original, for the purposes of this analysis considered raw, data-set can be obtained from http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+The original, for the purposes of this analysis considered raw, data-set can be obtained from   
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 Raw data collection process is quoted here from the source README.txt file for conveniance
 > The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
   
 > The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details.
 
+
+## Processing
+
 The raw data was merged using `cbind()` and sanitized to obtain a tidy date-set, from which only the mean() and std() values were extracted. Grouping of the resulting data-set
-was performed using `split()` based on `subject` and `activity` and the resulting independant tidy dataset was obtained by calculating column means per each group using `lapply()`. See [README.md](./README.md) for more details.
+was performed using `split()` based on `subject` and `activity` and the resulting independant tidy dataset was obtained by calling `colMeans()` for each group using `lapply()`. See [README.md](./README.md) for details on script execution.
 
 
 
 ## Transformations
 
-Variables from the raw data-set (found here) went thru a tidying process as per Week 4 lecture of Getting and Cleaning data, summarized here:
+Original variables from the raw data-set [found in features.txt](./features.txt) went through a tidying process as per Week 4 lecture of Getting and Cleaning data, summarized here:
 1. Names of variables should be:
    * All lower case when possible
    * Descriptive
@@ -33,15 +38,16 @@ Variables from the raw data-set (found here) went thru a tidying process as per 
    * Should be descriptive
 
 
-Specifically, this means:
-1. column names are lowercased letters
-2. commas and underscores have been dropped (this includes the text values in column activity)
-3. function names as [described here] have been replaced with their *descriptive* names (std() to 'standarddeviation')
+Specifically, this means:  
+
+1. column names have been made lower-cased
+2. commas and underscores have been dropped (this includes the text values in column `activity`)
+3. function names as [described here](./features_info.txt) have been replaced with their *descriptive* names (std() to 'standarddeviation')
 4. domain measurement prefixes 'f' and 't' have been replace with 'frequency' and 'time' respectively
-5. shorthands as Acc have been replaced with more *descriptive* names ie. 'acceleration'
+5. shorthands as Acc have been replaced with more descriptive names ie. 'acceleration'
 
 
-For the purpos of this project *only mean averages and standard deviations* values have been extracted from the merged and tidyed dataset obtained by a process as describer in the README.md
+For the purpos of this project *only mean averages and standard deviations* values have been extracted from the merged and tidyed dataset obtained by a process as describer in the [README.md](./README.md)
 
 ## Variables
 Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv
