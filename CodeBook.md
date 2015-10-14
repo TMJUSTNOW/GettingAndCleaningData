@@ -58,23 +58,23 @@ Provided is the list of sanitized variable names as they appear in independent_t
 | subject | 1 | numeric | The id of the test subject. The independant tidy dataset contains subjects `1` to `30` |
 | activity| 2 | factor  | The actual activity being performed during the experiament. Possible values are: `sitting`, `walking`, `walkingupstairs`, `walkingdownstairs`, `laying`, `standing` |
 |timebodyaccelerationmeanx | 3 |numeric| See original [features_info.txt](./features_info.txt) for details.|
-|timebodyaccelerationmeany | 4 |numeric||
-|timebodyaccelerationmeanz | 5 |numeric||
-|timebodyaccelerationstandarddeviationx | 6 |numeric||
-|timebodyaccelerationstandarddeviationy | 7 |numeric||
-|timebodyaccelerationstandarddeviationz | 8 |numeric||
-|timegravityaccelerationmeanx | 9  |numeric||
-|timegravityaccelerationmeany | 10  |numeric||
-|timegravityaccelerationmeanz | 11  |numeric||
-|timegravityaccelerationstandarddeviationx | 12  |numeric||
-|timegravityaccelerationstandarddeviationy | 13  |numeric||
-|timegravityaccelerationstandarddeviationz | 14  |numeric||
-|timebodyaccelerationjerkmeanx | 15  |numeric||
-|timebodyaccelerationjerkmeany | 16  |numeric||
-|timebodyaccelerationjerkmeanz | 17  |numeric||
-|timebodyaccelerationjerkstandarddeviationx | 18  |numeric||
-|timebodyaccelerationjerkstandarddeviationy | 19  |numeric||
-|timebodyaccelerationjerkstandarddeviationz | 20  |numeric||
+|timebodyaccelerationmeany | 4 |numeric|units: G|
+|timebodyaccelerationmeanz | 5 |numeric|units: G|
+|timebodyaccelerationstandarddeviationx | 6 |numeric|units: G|
+|timebodyaccelerationstandarddeviationy | 7 |numeric|units: G|
+|timebodyaccelerationstandarddeviationz | 8 |numeric|units: G|
+|timegravityaccelerationmeanx | 9  |numeric|units: G|
+|timegravityaccelerationmeany | 10  |numeric|units: G|
+|timegravityaccelerationmeanz | 11  |numeric|units: G|
+|timegravityaccelerationstandarddeviationx | 12  |numeric|units: G|
+|timegravityaccelerationstandarddeviationy | 13  |numeric|units: G|
+|timegravityaccelerationstandarddeviationz | 14  |numeric|units: G|
+|timebodyaccelerationjerkmeanx | 15  |numeric|units: m/s<sup>3</sup>|
+|timebodyaccelerationjerkmeany | 16  |numeric|units: m/s<sup>3</sup>|
+|timebodyaccelerationjerkmeanz | 17  |numeric|units: m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationx | 18  |numeric|units: m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationy | 19  |numeric|units: m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationz | 20  |numeric|units: m/s<sup>3</sup>|
 |timebodygyromeanx | 21  |numeric||
 |timebodygyromeany | 22  |numeric||
 |timebodygyromeanz | 23  |numeric||
