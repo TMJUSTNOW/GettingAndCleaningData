@@ -45,12 +45,13 @@ Function `path()` is created as to handle the possibility of the data directory 
 
 2. Extract measurements on mean and standard deviation
    * `features.txt` dataset is loaded into a data.frame from which only variable names containing `std()` and `mean()` are extracted 
-   and applied to a subseting function to `x` to obtain the desired data.frame `data`
-   * a characted vector `sanitized_names` of names to tidy-up is obtained from `features` using `grep()`
+   and applied to a subseting function on `x` to obtain the desired data.frame `data`
+   * a character vector `sanitized_names` of names to tidy-up is obtained from vector `features` using `grep()`
    * list `transform_map` lists in a *search-and-replace* notation what is to be transformed
-   * a loop performs all the tidying. <sub>See Week 4 of Getting and Cleaning data : Regular expressions</sub>
-   * Dashes `-` and underscores `_` are handled recursivly using `gsub()`
+   * a loop performs the tidying. <sub>See Week 4 of Getting and Cleaning data : Regular expressions</sub>
+   * Dashes `-` and underscores `_` are handled recursively using `gsub()`
    * `names( data )` is assigned the value of this new `sanitized_names` vector
+   List of transformations is contained with [The Code Book](./CodeBook.md)
 
 3. Uses descriptive activity names   
    * `activity_labes` dataset is loaded and transformed to lowercase with all underscores `_` dropped.
