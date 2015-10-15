@@ -43,8 +43,9 @@ Although the script was developed on Windows, `file.path()` was used to construc
 
 
 ## Processing
+The script performs the following operations in order.
 
-1. Merge training and test set
+1. Merges training and test sets
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column classes.
    * `x_train` id loaded specifying the column classes determined above, in it's full length.  
      This approach significantly reduces the load-time. <sub>See R Programming course, Week 1: Loading Large Tables</sub>
@@ -52,7 +53,7 @@ Although the script was developed on Windows, `file.path()` was used to construc
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
    * the same process is performed on `subject_train` and `subject_test` data-sets producing `subjects`
 
-2. Extract measurements on mean and standard deviation
+2. Extracts measurements on mean and standard deviation
    * `features.txt` dataset is loaded into a data.frame from which only variable names containing `"std()"` and `"mean()"` are extracted 
    and applied to a subseting function on `x` to obtain the desired data.frame `data`
    * a character vector `sanitized_names` of names to tidy-up is obtained from vector `features` using `grep()`
@@ -67,11 +68,11 @@ Although the script was developed on Windows, `file.path()` was used to construc
    * `activity_labes` dataset is loaded and transformed to lowercase with all underscores `"_"` dropped.
    * vector `activity_labes` is factorized using `as.factor()` and assigned to column 1 of `y` data.frame (the merged activities data-set) <sub>See Week 4 of Getting and Cleaning data: Editing text variables.</sub>
 
-4. Appropriately label the data set with descriptive variable names
+4. Appropriately labels the data set with descriptive variable names
    * `names( subject )` is assigned the literal value `"subject"`
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` using `cbind()`
 
-5. Create independent tidy data set with averages of each variable for each activity and each subject
+5. Creates independent tidy data set with averages of each variable for each activity and each subject
    * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column had been added by `paste()`-ing the `subcject` and `activity` values.
    A value from this concatinated field might look something like `1.walking`
    * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed. <sub>See R Programming Course, Week 3: loop functions - lapply()</sub>
