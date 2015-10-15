@@ -56,76 +56,79 @@ For the purposed of this project *only mean and standard deviation* values have 
 ## Variables
 Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv
 
-| Variable name | Variable position | Variable                     | Values / Units and explanations |
+| Variable name | Variable position | Variable                     | Values and notes        |
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
 | subject | 1 | numeric | The id of the test subject. The independant tidy dataset contains subjects `1` to `30` |
 | activity| 2 | factor  | The actual activity being performed during the experiament. Possible values are: `sitting`, `walking`, `walkingupstairs`, `walkingdownstairs`, `laying`, `standing` |
-|timebodyaccelerationmeanx | 3 |numeric|units: G|
-|timebodyaccelerationmeany | 4 |numeric|units: G|
-|timebodyaccelerationmeanz | 5 |numeric|units: G|
-|timebodyaccelerationstandarddeviationx | 6 |numeric|units: G|
-|timebodyaccelerationstandarddeviationy | 7 |numeric|units: G|
-|timebodyaccelerationstandarddeviationz | 8 |numeric|units: G|
-|timegravityaccelerationmeanx | 9  |numeric|units: G|
-|timegravityaccelerationmeany | 10  |numeric|units: G|
-|timegravityaccelerationmeanz | 11  |numeric|units: G|
-|timegravityaccelerationstandarddeviationx | 12  |numeric|units: G|
-|timegravityaccelerationstandarddeviationy | 13  |numeric|units: G|
-|timegravityaccelerationstandarddeviationz | 14  |numeric|units: G|
-|timebodyaccelerationjerkmeanx | 15  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationjerkmeany | 16  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationjerkmeanz | 17  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationjerkstandarddeviationx | 18  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationjerkstandarddeviationy | 19  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationjerkstandarddeviationz | 20  |numeric|units: m/s<sup>3</sup>|
-|timebodygyromeanx | 21  |numeric|units: G|
-|timebodygyromeany | 22  |numeric|units: G|
-|timebodygyromeanz | 23  |numeric|units: G|
-|timebodygyrostandarddeviationx | 24  |numeric|units: G|
-|timebodygyrostandarddeviationy | 25  |numeric|units: G|
-|timebodygyrostandarddeviationz | 26  |numeric|units: G|
-|timebodygyrojerkmeanx | 27  |numeric|units: m/s<sup>3</sup>|
-|timebodygyrojerkmeany | 28  |numeric|units: m/s<sup>3</sup>|
-|timebodygyrojerkmeanz | 29  |numeric|units: m/s<sup>3</sup>|
-|timebodygyrojerkstandarddeviationx | 30  |numeric|units: m/s<sup>3</sup>|
-|timebodygyrojerkstandarddeviationy | 31  |numeric|units: m/s<sup>3</sup>|
-|timebodygyrojerkstandarddeviationz | 32  |numeric|units: m/s<sup>3</sup>|
-|timebodyaccelerationmagnitudemean | 33  |numeric|units: N/a|
-|timebodyaccelerationmagnitudestandarddeviation | 34  |numeric|units: N/a|
-|timegravityaccelerationmagnitudemean | 35  |numeric|units: N/a|
-|timegravityaccelerationmagnitudestandarddeviation | 36  |numeric|units: N/a|
-|timebodyaccelerationjerkmagnitudemean | 37  |numeric|units: N/a|
-|timebodyaccelerationjerkmagnitudestandarddeviation | 38  |numeric|units: N/a|
-|timebodygyromagnitudemean | 39  |numeric|units: N/a|
-|timebodygyromagnitudestandarddeviation | 40  |numeric|units: N/a|
-|timebodygyrojerkmagnitudemean | 41  |numeric|units: N/a|
-|timebodygyrojerkmagnitudestandarddeviation | 42  |numeric|units: N/a|
-|frequencybodyaccelerationmeanx | 43  |numeric|units: G|
-|frequencybodyaccelerationmeany | 44  |numeric|units: G|
-|frequencybodyaccelerationmeanz | 45  |numeric|units: G|
-|frequencybodyaccelerationstandarddeviationx | 46  |numeric|units: G|
-|frequencybodyaccelerationstandarddeviationy | 47  |numeric|units: G|
-|frequencybodyaccelerationstandarddeviationz | 48  |numeric|units: G|
-|frequencybodyaccelerationjerkmeanx | 49  |numeric|units: m/s<sup>3</sup>|
-|frequencybodyaccelerationjerkmeany | 50  |numeric|units: m/s<sup>3</sup>|
-|frequencybodyaccelerationjerkmeanz | 51  |numeric|units: m/s<sup>3</sup>|
-|frequencybodyaccelerationjerkstandarddeviationx | 52  |numeric|units: m/s<sup>3</sup>|
-|frequencybodyaccelerationjerkstandarddeviationy | 53  |numeric|units: m/s<sup>3</sup>|
-|frequencybodyaccelerationjerkstandarddeviationz | 54  |numeric|units: m/s<sup>3</sup>|
-|frequencybodygyromeanx | 55  |numeric|units: G|
-|frequencybodygyromeany | 56  |numeric|units: G|
-|frequencybodygyromeanz | 57  |numeric|units: G|
-|frequencybodygyrostandarddeviationx | 58  |numeric|units: G|
-|frequencybodygyrostandarddeviationy | 59  |numeric|units: G|
-|frequencybodygyrostandarddeviationz | 60  |numeric|units: G|
-|frequencybodyaccelerationmagnitudemean | 61  |numeric|units: N/a|
-|frequencybodyaccelerationmagnitudestandarddeviation | 62  |numeric|units: N/a|
-|frequencybodybodyaccelerationjerkmagnitudemean | 63  |numeric|units: N/a|
-|frequencybodyaccjerkmagnitudestandarddeviation | 64  |numeric|units: N/a|
-|frequencybodybodygyromagnitudemean | 65  |numeric|units: N/a|
-|frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|units: N/a|
-|frequencybodybodygyrojerkmagnitudemean | 67  |numeric|units: N/a|
-|frequencybodybodygyrojerkmagnitudestandarddeviation | 68  |numeric|units: N/a|
+
+| Variable name | Variable position | Variable                     | Units                   |
+| ------------- | -----------------:| ---------------------------- | ----------------------- |
+|timebodyaccelerationmeanx | 3 |numeric|G|
+|timebodyaccelerationmeany | 4 |numeric|G|
+|timebodyaccelerationmeanz | 5 |numeric|G|
+|timebodyaccelerationstandarddeviationx | 6 |numeric|G|
+|timebodyaccelerationstandarddeviationy | 7 |numeric|G|
+|timebodyaccelerationstandarddeviationz | 8 |numeric|G|
+|timegravityaccelerationmeanx | 9  |numeric|G|
+|timegravityaccelerationmeany | 10  |numeric|G|
+|timegravityaccelerationmeanz | 11  |numeric|G|
+|timegravityaccelerationstandarddeviationx | 12  |numeric|G|
+|timegravityaccelerationstandarddeviationy | 13  |numeric|G|
+|timegravityaccelerationstandarddeviationz | 14  |numeric|G|
+|timebodyaccelerationjerkmeanx | 15  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkmeany | 16  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkmeanz | 17  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationx | 18  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationy | 19  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkstandarddeviationz | 20  |numeric|m/s<sup>3</sup>|
+|timebodygyromeanx | 21  |numeric|G|
+|timebodygyromeany | 22  |numeric|G|
+|timebodygyromeanz | 23  |numeric|G|
+|timebodygyrostandarddeviationx | 24  |numeric|G|
+|timebodygyrostandarddeviationy | 25  |numeric|G|
+|timebodygyrostandarddeviationz | 26  |numeric|G|
+|timebodygyrojerkmeanx | 27  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkmeany | 28  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkmeanz | 29  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkstandarddeviationx | 30  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkstandarddeviationy | 31  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkstandarddeviationz | 32  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationmagnitudemean | 33  |numeric|N/A|
+|timebodyaccelerationmagnitudestandarddeviation | 34  |numeric|N/A|
+|timegravityaccelerationmagnitudemean | 35  |numeric|N/A|
+|timegravityaccelerationmagnitudestandarddeviation | 36  |numeric|N/A|
+|timebodyaccelerationjerkmagnitudemean | 37  |numeric|N/A|
+|timebodyaccelerationjerkmagnitudestandarddeviation | 38  |numeric|N/A|
+|timebodygyromagnitudemean | 39  |numeric|N/A|
+|timebodygyromagnitudestandarddeviation | 40  |numeric|N/A|
+|timebodygyrojerkmagnitudemean | 41  |numeric|N/A|
+|timebodygyrojerkmagnitudestandarddeviation | 42  |numeric|N/A|
+|frequencybodyaccelerationmeanx | 43  |numeric|G|
+|frequencybodyaccelerationmeany | 44  |numeric|G|
+|frequencybodyaccelerationmeanz | 45  |numeric|G|
+|frequencybodyaccelerationstandarddeviationx | 46  |numeric|G|
+|frequencybodyaccelerationstandarddeviationy | 47  |numeric|G|
+|frequencybodyaccelerationstandarddeviationz | 48  |numeric|G|
+|frequencybodyaccelerationjerkmeanx | 49  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccelerationjerkmeany | 50  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccelerationjerkmeanz | 51  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccelerationjerkstandarddeviationx | 52  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccelerationjerkstandarddeviationy | 53  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccelerationjerkstandarddeviationz | 54  |numeric|m/s<sup>3</sup>|
+|frequencybodygyromeanx | 55  |numeric|G|
+|frequencybodygyromeany | 56  |numeric|G|
+|frequencybodygyromeanz | 57  |numeric|G|
+|frequencybodygyrostandarddeviationx | 58  |numeric|G|
+|frequencybodygyrostandarddeviationy | 59  |numeric|G|
+|frequencybodygyrostandarddeviationz | 60  |numeric|G|
+|frequencybodyaccelerationmagnitudemean | 61  |numeric|N/A|
+|frequencybodyaccelerationmagnitudestandarddeviation | 62  |numeric|N/A|
+|frequencybodybodyaccelerationjerkmagnitudemean | 63  |numeric|N/A|
+|frequencybodyaccjerkmagnitudestandarddeviation | 64  |numeric|N/A|
+|frequencybodybodygyromagnitudemean | 65  |numeric|N/A|
+|frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|N/A|
+|frequencybodybodygyrojerkmagnitudemean | 67  |numeric|N/A|
+|frequencybodybodygyrojerkmagnitudestandarddeviation | 68  |numeric|N/A|
 
 The raw data excerpt is quoted here for convenience.
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
