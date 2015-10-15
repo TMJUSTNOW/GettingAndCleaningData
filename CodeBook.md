@@ -121,7 +121,7 @@ Provided is the list of sanitized variable names as they appear in independent_t
 |frequencybodyaccelerationmagnitudemean | 61  |numeric|units: N/a|
 |frequencybodyaccelerationmagnitudestandarddeviation | 62  |numeric|units: N/a|
 |frequencybodybodyaccelerationjerkmagnitudemean | 63  |numeric|units: N/a|
-|frequencybodybodyaccelerationjerkmagnitudestandarddeviation | 64  |numeric|units: N/a|
+|frequencybodyaccjerkmagnitudestandarddeviation | 64  |numeric|units: N/a|
 |frequencybodybodygyromagnitudemean | 65  |numeric|units: N/a|
 |frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|units: N/a|
 |frequencybodybodygyrojerkmagnitudemean | 67  |numeric|units: N/a|
