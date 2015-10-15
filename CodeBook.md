@@ -60,7 +60,7 @@ Provided is the list of sanitized variable names as they appear in independent_t
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
 | subject | 1 | numeric | The id of the test subject. The independant tidy dataset contains subjects `1` to `30` |
 | activity| 2 | factor  | The actual activity being performed during the experiament. Possible values are: `sitting`, `walking`, `walkingupstairs`, `walkingdownstairs`, `laying`, `standing` |
-|timebodyaccelerationmeanx | 3 |numeric| See original [features_info.txt](./features_info.txt) for details.|
+|timebodyaccelerationmeanx | 3 |numeric|units: G|
 |timebodyaccelerationmeany | 4 |numeric|units: G|
 |timebodyaccelerationmeanz | 5 |numeric|units: G|
 |timebodyaccelerationstandarddeviationx | 6 |numeric|units: G|
@@ -126,6 +126,8 @@ Provided is the list of sanitized variable names as they appear in independent_t
 |frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|units: N/a|
 |frequencybodybodygyrojerkmagnitudemean | 67  |numeric|units: N/a|
 |frequencybodybodygyrojerkmagnitudestandarddeviation | 68  |numeric|units: N/a|
+
+See original [features_info.txt](./features_info.txt) for details.
 
 The raw data excerpt is quoted here for convenience.
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
