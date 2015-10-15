@@ -23,7 +23,7 @@ The project consists of the following items:
 4. [independent_tidy_data.csv]( ./independent_tidy_data.csv )  
    <small>The script outputs a text file via `write.table()` which has (in this repository only) been converted to a .csv format to assist the reviewer.</small>
 5. [features_info.txt](./features_info.txt) and [features.txt](./features_info.txt) as they appear in the source package.
-6. [The raw data](./getdata_projectfiles_UCI HAR Dataset.zip)
+6. [The raw data zip package](./getdata_projectfiles_UCI HAR Dataset.zip) 56MB
 
 
 ## Coding
