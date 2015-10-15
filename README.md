@@ -26,7 +26,7 @@ The project consists of the following items:
 6. [The raw data zip package](./getdata_projectfiles_UCI HAR Dataset.zip) 56MB
 
 
-## Coding
+## Coding information
 
 Development was performed using RStudio 0.99.486, R version 3.2.2. "Fire Safety" on Windows 8.1
 
@@ -35,15 +35,14 @@ Adhering to the Coding Standard lecture from Week 2 of the R Programing course, 
 Payload containing the raw data was obtained on 2015-10-11 11:05 AM from:   
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
-
-## Processing
-
 The assignment calls for the script to be runnable as long as the working directory contains "Samsung Data" but is unclear about what that means; a directory "Samsung Data" or the directory containing data from Samsung.
 
 To make it easier for others to execute and examine the script a block of code has been added which shall upon finding both `"test"` and `"train"` directories in the currently active working directory, assume the script has been dropped into the root directory of the extracted source package. 
 
 Although the script was developed on Windows, `file.path()`s were used to construct the paths to the data-sets, so it should work on *nix systems without modification.
 
+
+## Processing
 
 1. Merge training and test set
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column classes.
