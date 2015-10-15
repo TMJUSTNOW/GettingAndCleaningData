@@ -50,7 +50,7 @@ Although the script was developed on Windows, `file.path()` was used to construc
      This approach significantly reduces the load-time. <sub>See R Programming course, Week 1: Loading Large Tables</sub>
    * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()`
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
-   * the same process is performed on `subject_train` and `subject_test` data-sets producing data.frame `subjects`
+   * the same process is performed on `subject_train` and `subject_test` data-sets producing `subjects`
 
 2. Extract measurements on mean and standard deviation
    * `features.txt` dataset is loaded into a data.frame from which only variable names containing `std()` and `mean()` are extracted 
