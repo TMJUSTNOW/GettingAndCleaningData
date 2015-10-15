@@ -1,7 +1,7 @@
 # Code book
 
 This Code Book is part of the Course project solution on *Getting and Cleaning data* for the DataScience Specialization offered by Johns Hophins Bloomberg school of public health via Coursera.
-It provides information on the data collection process, variables and transformations performed.
+It provides information on the data collection process, variables and transformations performed and expands upon the information contained within [features_info.txt](./features_info.txt) and [features.txt](./features.txt) from the source package.
 
 This codebook is, in part, based on an example provided here:  
 http://www.icpsr.umich.edu/icpsrweb/ICPSR/help/cb9721.jsp
