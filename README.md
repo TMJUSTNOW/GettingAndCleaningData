@@ -71,7 +71,7 @@ Although the script was developed on Windows, `file.path()` was used to construc
    * `names( subject )` is assigned the value `subject`
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` data.frames using cbind()
 
-5. Creates independent tidy data set with averages of each variable for each activity and each subject
+5. Create independent tidy data set with averages of each variable for each activity and each subject
    * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column had been added by `paste()`-ing the `subcject` and `activity` values.
    A value from this concatinated field might look something like `1.walking`
    * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed. <sub>See R Programming Course, Week 3: loop functions - lapply()</sub>
