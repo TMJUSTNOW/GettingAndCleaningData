@@ -97,16 +97,16 @@ The listing is split for readability sake.
 |timebodygyrojerkstandarddeviationx | 30  |numeric|m/s<sup>3</sup>|
 |timebodygyrojerkstandarddeviationy | 31  |numeric|m/s<sup>3</sup>|
 |timebodygyrojerkstandarddeviationz | 32  |numeric|m/s<sup>3</sup>|
-|timebodyaccelerationmagnitudemean | 33  |numeric|N/A|
-|timebodyaccelerationmagnitudestandarddeviation | 34  |numeric|N/A|
-|timegravityaccelerationmagnitudemean | 35  |numeric|N/A|
-|timegravityaccelerationmagnitudestandarddeviation | 36  |numeric|N/A|
-|timebodyaccelerationjerkmagnitudemean | 37  |numeric|N/A|
-|timebodyaccelerationjerkmagnitudestandarddeviation | 38  |numeric|N/A|
-|timebodygyromagnitudemean | 39  |numeric|N/A|
-|timebodygyromagnitudestandarddeviation | 40  |numeric|N/A|
-|timebodygyrojerkmagnitudemean | 41  |numeric|N/A|
-|timebodygyrojerkmagnitudestandarddeviation | 42  |numeric|N/A|
+|timebodyaccelerationmagnitudemean | 33  |numeric|G|
+|timebodyaccelerationmagnitudestandarddeviation | 34  |numeric|G|
+|timegravityaccelerationmagnitudemean | 35  |numeric|G|
+|timegravityaccelerationmagnitudestandarddeviation | 36  |numeric|G|
+|timebodyaccelerationjerkmagnitudemean | 37  |numeric|m/s<sup>3</sup>|
+|timebodyaccelerationjerkmagnitudestandarddeviation | 38  |numeric|m/s<sup>3</sup>|
+|timebodygyromagnitudemean | 39  |numeric|G|
+|timebodygyromagnitudestandarddeviation | 40  |numeric|G|
+|timebodygyrojerkmagnitudemean | 41  |numeric|m/s<sup>3</sup>|
+|timebodygyrojerkmagnitudestandarddeviation | 42  |numeric|m/s<sup>3</sup>|
 |frequencybodyaccelerationmeanx | 43  |numeric|G|
 |frequencybodyaccelerationmeany | 44  |numeric|G|
 |frequencybodyaccelerationmeanz | 45  |numeric|G|
@@ -125,14 +125,14 @@ The listing is split for readability sake.
 |frequencybodygyrostandarddeviationx | 58  |numeric|G|
 |frequencybodygyrostandarddeviationy | 59  |numeric|G|
 |frequencybodygyrostandarddeviationz | 60  |numeric|G|
-|frequencybodyaccelerationmagnitudemean | 61  |numeric|N/A|
-|frequencybodyaccelerationmagnitudestandarddeviation | 62  |numeric|N/A|
-|frequencybodybodyaccelerationjerkmagnitudemean | 63  |numeric|N/A|
-|frequencybodyaccjerkmagnitudestandarddeviation | 64  |numeric|N/A|
-|frequencybodybodygyromagnitudemean | 65  |numeric|N/A|
-|frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|N/A|
-|frequencybodybodygyrojerkmagnitudemean | 67  |numeric|N/A|
-|frequencybodybodygyrojerkmagnitudestandarddeviation | 68  |numeric|N/A|
+|frequencybodyaccelerationmagnitudemean | 61  |numeric|G|
+|frequencybodyaccelerationmagnitudestandarddeviation | 62  |numeric|G|
+|frequencybodybodyaccelerationjerkmagnitudemean | 63  |numeric|m/s<sup>3</sup>|
+|frequencybodyaccjerkmagnitudestandarddeviation | 64  |numeric|m/s<sup>3</sup>|
+|frequencybodybodygyromagnitudemean | 65  |numeric|G|
+|frequencybodybodygyromagnitudestandarddeviation | 66  |numeric|G|
+|frequencybodybodygyrojerkmagnitudemean | 67  |numeric|m/s<sup>3</sup>|
+|frequencybodybodygyrojerkmagnitudestandarddeviation | 68  |numeric|m/s<sup>3</sup>|
 
 The raw data excerpt is quoted here for convenience.
 > The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
