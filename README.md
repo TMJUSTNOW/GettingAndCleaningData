@@ -20,7 +20,8 @@ The project consists of the following items:
 1. [run_analysis.R](./run_analysis.R) Which is used to perform all merging, tidying, transformation and extraction.
 2. [README.md](./README.md) (this file)
 3. [The Code Book](./CodeBook.md) describing data collection, variables and methods used
-4. [independent_tidy_data.csv]( ./independent_tidy_data.csv ) <sub>The script outputs a text file via `write.table()` which in this repo has been converted to .csv for better readability</sub>
+4. [independent_tidy_data.csv]( ./independent_tidy_data.csv )  
+   <small>The script outputs a text file via `write.table()` which has (in this repository only) been converted to a .csv format to assist the reviewer.</small>
 5. [features_info.txt](./features_info.txt) and [features.txt](./features_info.txt) as they appear in the source package.
 6. [The raw data](./getdata_projectfiles_UCI HAR Dataset.zip)
 
