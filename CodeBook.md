@@ -1,6 +1,6 @@
 # Code book
 
-This Code Book is part of the Course project solution on *Getting and Cleaning data* for the DataScience Specialization offered by Johns Hophins Bloomberg school of public medicine via Coursera.
+This Code Book is part of the Course project solution on *Getting and Cleaning data* for the DataScience Specialization offered by Johns Hophins Bloomberg school of public health via Coursera.
 It provides information on the data collection process, variables and transformations performed.
 
 This codebook is, in part, based on an example provided here:  
