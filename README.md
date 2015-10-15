@@ -21,7 +21,7 @@ The project consists of the following items:
 2. [README.md](./README.md) (this file)
 3. [The Code Book](./CodeBook.md) describing data collection, variables and methods used
 4. [independent_tidy_data.csv]( ./independent_tidy_data.csv )  
-   <small>The script outputs a text file via `write.table()` which has (in this repository only) been converted to a .csv format to assist the reviewer.</small>
+   <sup>The script outputs a text file via `write.table()` which has (in this repository only) been converted to a .csv format to assist the reviewer.</sup>
 5. [features_info.txt](./features_info.txt) and [features.txt](./features_info.txt) as they appear in the source package.
 6. [The raw data zip package](./getdata_projectfiles_UCI HAR Dataset.zip) 56MB
 
