@@ -61,6 +61,8 @@ Provided is the list of sanitized variable names as they appear in independent_t
 | subject | 1 | numeric | The id of the test subject. The independant tidy dataset contains subjects `1` to `30` |
 | activity| 2 | factor  | The actual activity being performed during the experiament. Possible values are: `sitting`, `walking`, `walkingupstairs`, `walkingdownstairs`, `laying`, `standing` |
 
+## Measurement variables
+
 | Variable name | Variable position | Variable                     | Units                   |
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
 |timebodyaccelerationmeanx | 3 |numeric|G|
