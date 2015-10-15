@@ -46,7 +46,8 @@ Although the script was developed on Windows, `file.path()` was used to construc
 
 1. Merge training and test set
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column classes.
-   * `x_train` id loaded specifying the column classes determined above, in it's full length. This approach significantly reduces the load-time. <sub>See R Programming course, Week 1: Loading Large Tables</sub>
+   * `x_train` id loaded specifying the column classes determined above, in it's full length.  
+     This approach significantly reduces the load-time. <sub>See R Programming course, Week 1: Loading Large Tables</sub>
    * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()`
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
    * the same process is performed on `subject_train` and `subject_test` data-sets producing data.frame `subjects`
