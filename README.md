@@ -47,7 +47,7 @@ The script performs the following operations in order.
 
 1. Merges training and test sets
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column classes.
-   * `x_train` id loaded specifying the column classes determined above, in it's full length.  
+   * `x_train` is loaded specifying the column classes determined above, in it's full length.  
      This approach significantly reduces the load-time. <sub>See R Programming course, Week 1: Loading Large Tables</sub>
    * `x_train` and `x_test` data-sets are merged into data.frame `x` using `rbind()`
    * `y_train` and `y_test` data-sets are loaded, in full, without determining column classes due to their small size. `rbind()` merges the two into data.frame `y`
