@@ -26,7 +26,7 @@ The project consists of the following items:
 6. [The raw data zip package](./getdata_projectfiles_UCI HAR Dataset.zip) 56MB
 
 
-## Coding information
+## Environment information
 
 Development was performed using RStudio 0.99.486, R version 3.2.2. "Fire Safety" on Windows 8.1
 
