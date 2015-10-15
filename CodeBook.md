@@ -55,7 +55,7 @@ For the purposed of this project *only mean and standard deviation* values have 
 
 ## Variables
 Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv  
-The listing is split for readability sake.
+The listing is split for better readability.
 
 | Variable name | Variable position | Variable                     | Values and notes        |
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
