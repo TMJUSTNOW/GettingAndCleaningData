@@ -77,6 +77,8 @@ test_x <- read.table (
 ## Merge train with test
 ##
 x <- rbind( train_x, test_x )
+
+## These are no longer needed. Remove them & free-up memory.
 rm( train_x, test_x )
 
 
@@ -96,7 +98,6 @@ rm( train_y, test_y )
 train_subj <- read.table(file.path(data_directory,"train","subject_train.txt"))
 test_subj <- read.table(file.path(data_directory, "test", "subject_test.txt" ))
 
-## Merge subjects
 subjects <- rbind( train_subj, test_subj )
 rm( train_subj, test_subj )
 
