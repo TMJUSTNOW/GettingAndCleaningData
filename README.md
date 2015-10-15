@@ -44,10 +44,6 @@ To make it easier for others to execute and examine the script a block of code h
 
 Although the script was developed on Windows, `file.path()`s were used to construct the paths to the data-sets, so it should work on *nix systems without modification.
 
-##
-## As long as the train and test directories are found, the script will assume
-## it's been place into the root directory of the source package data.
-##
 
 1. Merge training and test set
    * `x_train` data-set is initialiy loaded using `read.csv()` with a row limit set to `10`, providing adequate number of sample rows for R to determine column classes.
