@@ -82,8 +82,8 @@ Although the script was developed on Windows, `file.path()`s were used to constr
    * as `report` now lacks non-numeric fields these are to be reintroduced by means of parsing `rownames()`
    * `activity` is factorized as per guide-lines introduced in Week 4 of the course
    * `subject` is passed through `as.numeric()` as to permit proper ordering
-   * the `report` object is ordered by `subject` and `activity` than written to disk using `write.csv()` with `row.names` set to `FALSE`
+   * the `report` object is ordered by `subject` and `activity` than written to disk using `write.table()` with `row.names` set to `FALSE`
     
-   The resulting file is available [here](./independent_tidy_data.csv).
+   The resulting file (converted to .csv for readability) is available [here](./independent_tidy_data.csv).
 
 
