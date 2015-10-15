@@ -64,11 +64,11 @@ The script performs the following operations in order.
    
   List of transformations is contained within [The Code Book](./CodeBook.md)
 
-3. Uses descriptive activity names   
+3. Makes descriptive activity names   
    * `activity_labes` dataset is loaded and transformed to lowercase with all underscores `"_"` dropped.
    * vector `activity_labes` is factorized using `as.factor()` and assigned to column 1 of `y` data.frame (the merged activities data-set) <sub>See Week 4 of Getting and Cleaning data: Editing text variables.</sub>
 
-4. Appropriately labels the data set with descriptive variable names
+4. Labels the data set with descriptive variable names
    * `names( subject )` is assigned the literal value `"subject"`
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` using `cbind()`
 
