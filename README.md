@@ -39,7 +39,7 @@ The assignment calls for the script to be runnable as long as the working direct
 
 To make it easier for others to execute and examine the script a block of code has been added which shall upon finding both `"test"` and `"train"` directories in the currently active working directory, assume the script has been dropped into the root directory of the extracted source package. 
 
-Although the script was developed on Windows, `file.path()`s were used to construct the paths to the data-sets, so it should work on *nix systems without modification.
+Although the script was developed on Windows, `file.path()` was used to construct the paths to data-sets, so it should work on *nix systems without modification.
 
 
 ## Processing
