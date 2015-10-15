@@ -29,13 +29,6 @@ if( dir.exists( "train" ) & dir.exists( "test" ) ){
 }
 
 
-## Builds a valid path to the passed datafile
-##
-path <- function( filename ){
-    paste( data_directory, filename, sep="\\" )
-}
-
-
 ##
 ## 1. Merges the training and the test sets to create one data set. ############
 ##
@@ -44,13 +37,13 @@ path <- function( filename ){
 ## Load training data *sample of 10 rows* to determine column classes.
 ## This considerably speeds-up the loadtime.
 ##
-train_x <- read.table( path( "train\\X_train.txt" ), nrows=10, comment.char="" )
+train_x <- read.table( file.path( data_directory, "train", "X_train.txt" ), nrows=10, comment.char="" )
 
 
 ## Load training data - complete dataset
 ##
 train_x <- read.table (
-    path( "train\\X_train.txt" ),
+    file.path( data_directory, "train", "X_train.txt" ),
     header       = FALSE,
     dec          = ".",
     fill         = TRUE,
@@ -61,13 +54,17 @@ train_x <- read.table (
 
 ## Load test data - sample
 ##
-test_x <- read.table( path( "test\\X_test.txt" ), nrows=10, comment.char="" )
+test_x <- read.table(
+    file.path( data_directory, "test", "X_test.txt" ),
+    nrows=10,
+    comment.char=""
+)
 
 
 ## Load training data - complete dataset
 ##
 test_x <- read.table (
-    path( "test\\X_test.txt" ),
+    file.path( data_directory, "test", "X_test.txt" ),
     header       = FALSE,
     dec          = ".",
     fill         = TRUE,
@@ -86,8 +83,8 @@ rm( train_x, test_x )
 
 ## Merge activities - no need to preload samples. Theres only one column.
 ##
-train_y <- read.table ( path( "train\\y_train.txt" ) )
-test_y <- read.table ( path( "test\\y_test.txt" ) )
+train_y <- read.table ( file.path( data_directory, "train", "y_train.txt" ) )
+test_y <- read.table ( file.path( data_directory, "test", "y_test.txt" ) )
 y <- rbind( train_y, test_y )
 names( y )[1] <- "activity"
 rm( train_y, test_y )
@@ -96,8 +93,8 @@ rm( train_y, test_y )
 
 ## Merge subjects
 ##
-train_subj <- read.table( path( "train\\subject_train.txt" ) )
-test_subj <- read.table( path( "test\\subject_test.txt" ) )
+train_subj <- read.table(file.path(data_directory,"train","subject_train.txt"))
+test_subj <- read.table(file.path(data_directory, "test", "subject_test.txt" ))
 
 ## Merge subjects
 subjects <- rbind( train_subj, test_subj )
@@ -112,7 +109,10 @@ rm( train_subj, test_subj )
 
 
 ## Load features
-features <- read.table( path( 'features.txt' ), col.names = c( 'id', 'name' ) )
+features <- read.table(
+    file.path( data_directory, 'features.txt' ),
+    col.names = c( 'id', 'name' )
+)
 
 
 ## Exstract only the std() and mean() columns
@@ -227,4 +227,5 @@ write.table( report, file="independent_tidy_data.txt", row.names=FALSE )
 
 
 print( "All done. Thank you for playing :)" )
+
 
