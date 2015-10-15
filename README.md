@@ -53,7 +53,7 @@ Although the script was developed on Windows, `file.path()` was used to construc
    * the same process is performed on `subject_train` and `subject_test` data-sets producing `subjects`
 
 2. Extract measurements on mean and standard deviation
-   * `features.txt` dataset is loaded into a data.frame from which only variable names containing `std()` and `mean()` are extracted 
+   * `features.txt` dataset is loaded into a data.frame from which only variable names containing `"std()"` and `"mean()"` are extracted 
    and applied to a subseting function on `x` to obtain the desired data.frame `data`
    * a character vector `sanitized_names` of names to tidy-up is obtained from vector `features` using `grep()`
    * list `transform_map` lists in a *search-and-replace* notation what is to be transformed
@@ -68,7 +68,7 @@ Although the script was developed on Windows, `file.path()` was used to construc
    * vector `activity_labes` is factorized using `as.factor()` and assigned to column 1 of `y` data.frame (the merged activities data-set) <sub>See Week 4 of Getting and Cleaning data: Editing text variables.</sub>
 
 4. Appropriately label the data set with descriptive variable names
-   * `names( subject )` is assigned the value `subject`
+   * `names( subject )` is assigned the literal value `"subject"`
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` data.frames using cbind()
 
 5. Create independent tidy data set with averages of each variable for each activity and each subject
