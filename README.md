@@ -67,7 +67,7 @@ Function `path()` is created as to handle the possibility of the data directory 
    * `tidy_data` data.frame is obtained via merging of `subjects`, `y` and `data` data.frames using cbind()
 
 5. Creates independent tidy data set with averages of each variable for each activity and each subject
-   * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column had been added by `paste0()`-ing the `subcject` and `activity` values.
+   * vector containing group ids `grouped` is obtained by `split()`-ing the `tidy_data` data.frame to which a factrorized column had been added by `paste()`-ing the `subcject` and `activity` values.
    A value from this concatinated field might look something like `1.walking`
    * `lapply()` is used with an annonimous `function()` containing `colMeans()` for only numerical fields. `NA` values are removed. <sub>See R Programming Course, Week 3: loop functions - lapply()</sub>
    * the resulting data.frame must be passed through `t()` in order to switch rows/columns, thus producing data.frame `report`
