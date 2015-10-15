@@ -54,7 +54,8 @@ Specifically, this means:
 For the purposed of this project *only mean and standard deviation* values have been extracted from the merged and tidyed dataset obtained by a process describer in the [README.md](./README.md)
 
 ## Variables
-Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv The listing is split into two tables for readability.
+Provided is the list of sanitized variable names as they appear in independent_tidy_data.csv  
+The listing is split for readability sake.
 
 | Variable name | Variable position | Variable                     | Values and notes        |
 | ------------- | -----------------:| ---------------------------- | ----------------------- |
