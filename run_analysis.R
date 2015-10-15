@@ -12,7 +12,21 @@
 ################################################################################
 rm( list=ls() )
 
+
+## The default data directory
+##
 data_directory <- 'UCI HAR Dataset'
+
+
+## The assignemtn calls for the script to be runnable as long as the working
+## directory contains "Samsung Data" (unclear)
+##
+## As long as the train and test directories are found, the script will assume
+## it's been place into the root directory of the source package data.
+##
+if( dir.exists( "train" ) & dir.exists( "test" ) ){
+    data_directory <- '.'
+}
 
 
 ## Builds a valid path to the passed datafile
@@ -204,13 +218,13 @@ rownames( report ) <- NULL
 report <- cbind( "subject" = subject, "activity" = activity, report )
 report <- report[ order( report$subject, report$activity ), ]
 
+dim(report)
+
 ## Write the report file
 ##
-write.csv( report, file=" independent_tidy_data.csv", row.names=FALSE )
+write.table( report, file="independent_tidy_data.txt", row.names=FALSE )
 
 
 
 print( "All done. Thank you for playing :)" )
-
-
 
